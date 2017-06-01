@@ -1,0 +1,122 @@
+         1.  Variable (D?yis?n )haqqinda 
+   D?yis?n tipl?ri vasit?sil? h?r hansi bir d?yis?n? bir qiym?t (d?y?r) verilir.D?yis?n ifad?y? m?nsub olur.
+                                                    D?yis?n:= ifad?
+  M?s?l?n, Pascal dilind? nümun?
+ Var 
+    D?yis?n: d?yis?nin tipi;
+  Proqramda d?yis?nl?rin tipl?ri asagidaki s?kild?  yazilir:
+var
+  a,b,c: integer;
+  d: real;
+  e,f: integer;
+  s,s1: string;
+  ch: char;
+      Var k?lm?si “variable” sözünün qisa yazilisidir v? d?yis?n ya da qisaltma m?nasini verir.
+   D?yis?n tipl?ri birbasa veril?nl?rd?n ibar?tdir.H?m tam ?d?dl?rl? h?m d? k?sr ?d?dl?rl? ifad? olunan d?yis?nl?r vardir.Tam ?d?dl?rl? ifad? olunanlar: int, uint, short, ushort, long, ulong.K?sr ?d?dl?rl? ifad? olunanlar:float, double, decimal. 
+         2. Riyazi operatorlar (PHP dilind?)
+  ?d?di veril?nl?r PHP-d? asagidaki opeartorla emal olunur:
+  + iki ?d?din c?mi
+  – ?d?dl?rin f?rqi
+   * ?d?dl?rin vurulmasi
+  / ?d?dl?rin bölünm?si
+  % bölünm?nin qaligi
+
+  1    <?php
+  2   echo "2 + 2 = ", 2 + 2, "<br>"; 
+  3   echo "5 - 2 = ", 5 - 2, "<br>"; 
+  4   echo "10 * 10 = ", 10 * 10, "<br>"; 
+  5   echo "100 / 2 = ", 100 / 2, "<br>"; 
+  6   echo "10 % 2 = ", 10 % 2, "<br>";
+  7   ?>
+
+  Brauzerd? görün?c?k n?tic?:
+  2 + 2 = 4
+  5 – 2 = 3
+  10 * 10 = 100
+  100 / 2 = 50
+  10 % 2 = 0
+
+    3. M?ntiq operatorlari (R dilind?)
+   M?ntiq opearatorlari proqramlasdirma dilind? çox ?h?miyy?tlidir v? onlar mü?yy?n s?rtl?r ?sasinda biz? q?rar verm?kd? köm?k edir.
+Operator	       T?svir	              Nümun?
+	
+  &                   AND                                 v <- c(3,1,TRUE,2+3i)
+                                                              t  <- c(4,1,FALSE,2+3i)
+                                                             print(v&t)
+                                                             N?tic? asagidaki kimi olur:
+                                                             [1]  TRUE  TRUE FALSE  TRUE
+
+ | 	       OR                                  v <- c(3,0,TRUE,2+2i)
+                                                              t <- c(4,0,FALSE,2+3i)
+                                                              print(v|t)
+                                                             N?tic? asagidaki kimi olur:
+                                                              [1]  TRUE FALSE  TRUE  TRUE
+
+ !	         NOT                               v <- c(3,0,TRUE,2+2i)
+                                                              print(!v)
+                                                              N?tic? asagidaki kimi olur:
+                                                             [1] FALSE  TRUE FALSE FALSE
+
+ &&                  AND                                 True&&True&&False
+                                                             N?tic? asagidaki kimi olur:
+                                                              False
+
+ | |                   OR                                    False| |False| |True
+                                                             N?tic? asagidaki kimi olur:
+                                                             True
+
+
+      4.S?rt operatorlari
+
+  ==	2 operandin dogru olub olmadigini yoxlayir,?g?r dogrudursa True qiym?ti alinir        	                (A == B) is not true.
+  !=	2 operandin dogru olub olmadigini yoxlayir,?g?r dogru deyils?  onda True qiym?ti alinir             (A != B) is true.
+  >	Soldaki operandin sagdaki operanddan böyüklüyünü yoxlayir,?g?r böyüks? True olur	(A > B) is not true.
+ <	Soldaki operandin sagdaki operanddan kiçikliyini yoxlayir,?g?r kiçiks? True olur	                (A < B) is true.
+ >=	Soldaki operandin sagdaki operanddan böyük b?rab?rliyini yoxlayir, ?g?r el?dirs? True olur	(A >= B) is not true.
+ <=	Soldaki operandin sagdaki operanddan kiçik b?rab?rliyini yoxlayir, ?g?r el?dirs? True olur	(A <= B) is true.
+
+Nümun?:
+
+ #include <stdio.h>
+
+main() {
+
+   int a, b;
+   
+   a = 10;
+   b = 20;
+   
+   /* Here we check whether a is equal to 10 or not */
+   if( a == 10 ) {
+	
+      /* if a is equal to 10 then this body will be executed */
+      printf( "a is equal to 10\n");
+   }
+   
+   /* Here we check whether b is equal to 10 or not */
+   if( b == 10 ) {
+	
+      /* if b is equal to 10 then this body will be executed */
+      printf( "b is equal to 10\n");
+   }
+   
+   /* Here we check if a is less b than or not */
+   if( a < b ) {
+	
+      /* if a is less than b then this body will be executed */
+      printf( "a is less than b\n");
+   }
+   
+   /* Here we check whether a and b are not equal */
+   if( a != b ) {
+	
+      /* if a is not equal to b then this body will be executed */
+      printf( "a is not equal to b\n");
+   }
+}
+
+
+
+
+
+
